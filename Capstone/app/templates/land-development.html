@@ -1,0 +1,49 @@
+{%extends 'nav.html'%}{%block content%} {%load static%}
+
+<div class="land-development-img">
+  <div class="home-body">
+    <h1 class="body-title">Land Development</h1>
+    <h2 class="body-desc">
+      Subdivision, Planned Urban Development, & Site Grading & Drainage
+    </h2>
+    <a href="/contact" style="color:rgb(43, 43, 43);" class="contact-link contact-button home-contact"
+      >Get in touch about Land Development</a
+    >
+  </div>
+</div>
+
+<div class="all-services">
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/subdivision.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Subdivision</p>
+    <p class="service-sub">
+      Urban<br />
+      Suburban<br />
+      Rural<br />
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/development.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Planned Urban Development</p>
+    <p class="service-sub">
+      Concept Plans<br />
+      Plats<br />
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/grading.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Grading & Drainage</p>
+    <p class="service-sub">
+      Private<br />
+      Commercial<br />
+      Industrial<br />
+    </p>
+  </div>
+</div>
+
+{%endblock%}

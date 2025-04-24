@@ -1,0 +1,54 @@
+{%extends 'nav.html'%}{%block content%} {%load static%}
+
+<div class="water-sewer-img">
+  <div class="home-body">
+    <h1 class="body-title">Water & Sewer</h1>
+    <h2 class="body-desc">
+      System Analysis, Mapping, Rehabilitation, Sewer Collection, Water
+      Distribution, Sewer & Water Treatment
+    </h2>
+    <a href="/contact" style="color:rgb(43, 43, 43);" class="contact-link contact-button home-contact"
+      >Get in touch about Water & Sewer Services</a
+    >
+  </div>
+</div>
+
+<div class="all-services">
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/system-design.jpeg" %}" />
+    <hr class="divider" />
+    <p class="service-name">System Analysis</p>
+    <p class="service-sub">
+      Closed Circuit Television Inspections (CCTV)<br />
+      Pump Capacity Testing<br />
+      System Mapping & GIS<br />
+      Water Distribution System Modeling<br />
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/new-design.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">New System Design</p>
+    <p class="service-sub">
+      Water Distribution Systems<br />
+      Sanitary Sewer Collection Systems<br />
+      Water Treatment<br />
+      Sanitary Sewer Treatment<br />
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/water-rehabilitation.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Rehabilitation</p>
+    <p class="service-sub">
+      Sewer Pumping Stations<br />
+      Cured In Place Pipe (CIPP)<br />
+      Sewage Collection System Improvements<br />
+      Water Distribution System Improvements<br />
+    </p>
+  </div>
+</div>
+
+{%endblock%}

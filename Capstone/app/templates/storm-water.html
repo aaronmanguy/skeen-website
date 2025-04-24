@@ -1,0 +1,47 @@
+{%extends 'nav.html'%}{%block content%} {%load static%}
+
+<div class="storm-water-img">
+    <div class="home-body">
+      <h1 class="body-title">Storm Water</h1>
+      <h2 class="body-desc">
+        Storm Water Management, Drainage Studies, & Collection System Design
+      </h2>
+      <a href="/contact" style="color:rgb(43, 43, 43);" class="contact-link contact-button home-contact"
+        >Get in touch about Storm Water Services</a
+      >
+    </div>
+  </div>
+  
+  <div class="all-services">
+    <div class="service-box">
+      <img class="service-img" src="{% static "images/management.jpg" %}" />
+      <hr class="divider" />
+      <p class="service-name">Storm Water Management</p>
+      <p class="service-sub">
+        Hydraulics & Hydrology<br />
+      </p>
+    </div>
+  
+    <div class="service-box">
+      <img class="service-img" src="{% static "images/studies.jpg" %}" />
+      <hr class="divider" />
+      <p class="service-name">Drainage Studies</p>
+      <p class="service-sub">
+        Watershed Modeling<br />
+        Flood Hazard Mitigation<br />
+      </p>
+    </div>
+  
+    <div class="service-box">
+      <img class="service-img" src="{% static "images/system-design.jpeg" %}" />
+      <hr class="divider" />
+      <p class="service-name">Storm Water System Design</p>
+      <p class="service-sub">
+        Collection<br />
+        Detention<br />
+        System Improvement<br />
+      </p>
+    </div>
+  </div>
+
+{%endblock%}

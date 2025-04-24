@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static "styles.css" %}">
+    <link rel="icon" type="image/x-icon" href="{% static "images/skeen logo transparent.png" %}">
+    <script src="{% static "static.js" %}" defer></script>
+    <title>Skeen Engineering</title>
+  </head>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <a href="/"><img src="{% static "images/skeen logo transparent.png" %}" class="home-img" /></a>
+      </li>
+      <li class="hideOnMobile nav-link"><a href="/" data-animation-role="header-element">Home</a></li>
+        <li class="hideOnMobile nav-link">
+          <a href="#" tabindex="-1" data-animation-role="header-element">Services</a>
+          <ul class="dropdown">
+            <li><a href="/surveying">Surveying</a></li>
+            <li><a href="/transportation">Transportation</a></li>
+            <li><a href="/land-development">Land Development</a></li>
+            <li><a href="/storm-water">Storm Water</a></li>
+            <li><a href="/water-sewer">Water & Sewer</a></li>
+          </ul>
+        </li>
+      <li class="hideOnMobile nav-link"><a href="mailto:sheaskeen@gmail.com" target="_blank" aria-label="sheaskeen@gmail.com"><img src="{% static "images/mail.svg" %}" class="nav-contact-img"/></a></li>
+      <li class="hideOnMobile nav-link"><a href="https://www.facebook.com/christophersheaskeen" target="_blank" aria-label="Facebook"><img src="{% static "images/facebook.svg" %}" class="nav-contact-img"/></a></li>
+      <li class="hideOnMobile nav-link"><a href="https://www.instagram.com/skeenengineering/" target="_blank" aria-label="Instagram"><img src="{% static "images/instagram.svg" %}" class="nav-contact-img"/></a></li>
+      <li class="hideOnMobile contact-button"><a href="/contact" class="contact-link">Contact</a></li>
+
+      <li id="desk-nav-bar" class="menu-button" onclick="showMobileNav()">
+        <a href="#"><img src="{% static "images/menu-black.svg" %}" class="menu-img"></img></a>
+      </li>
+      
+      <li id="mobile-nav-bar" class="exit-menu-button" onclick="hideMobileNav()">
+        <a href="#"><img src="{% static "images/x-black.svg" %}" class="menu-img"></img></a>
+      </li>
+    </ul>
+
+
+
+    <ul class="mobile-nav" id="mobile-nav">
+      <li class="nav-link"><a href="/" data-animation-role="header-element">Home</a></li>
+      <li class="nav-link"><a data-animation-role="header-element">Services</a></li>
+      <div>
+        <li class="nav-link"><a href="mailto:sheaskeen@gmail.com" target="_blank" aria-label="sheaskeen@gmail.com"><img src="{% static "images/mail.svg" %}" class="nav-contact-img"/></a></li>
+        <li class="nav-link"><a href="https://www.facebook.com/christophersheaskeen" target="_blank" aria-label="Facebook"><img src="{% static "images/facebook.svg" %}" class="nav-contact-img"/></a></li>
+        <li class="nav-link"><a href="https://www.instagram.com/skeenengineering/" target="_blank" aria-label="Instagram"><img src="{% static "images/instagram.svg" %}" class="nav-contact-img"/></a></li>
+      </div>
+      <li class="contact-button"><a href="/contact" class="contact-link">Contact</a></li>
+    </ul>
+  </nav>
+  <body>
+    <div class="white-block"></div>
+    {%block content%}
+
+    {%endblock%}
+  </body>
+  <div class="footer">
+    <div class="footer-icon-holder">
+      <a href="mailto:sheaskeen@gmail.com" target="_blank" aria-label="sheaskeen@gmail.com" class="hideOnMobile footer-icon"><img src="{% static "images/mail-white.svg" %}" class="nav-contact-img"/></a>
+      <a href="https://www.facebook.com/christophersheaskeen" target="_blank" aria-label="Facebook" class="hideOnMobile footer-icon"><img src="{% static "images/facebook-white.svg" %}" class="nav-contact-img"/></a>
+      <a href="https://www.instagram.com/skeenengineering/" target="_blank" aria-label="Instagram" class="hideOnMobile footer-icon"><img src="{% static "images/instagram-white.svg" %}" class="nav-contact-img"/></a>
+    </div>
+    <div class="footer-info">
+      <h3 class="footer-text footer-title">Skeen Engineering</h3>
+      <p class="footer-text footer-sub" style="padding-top:20px;">P.O. Box 592 | Hernando, MS 38632 | <a href="mailto:sheaskeen@gmail.com" class="footer-link">sheaskeen@gmail.com</a> | <a href="tel:+16627212772" class="footer-link">(662) 721-2772</a></p>
+      <p class="footer-text footer-sub">Skeen Engineering © 2021. All Rights Reserved.</p>
+    </div>
+  </div>
+</html>

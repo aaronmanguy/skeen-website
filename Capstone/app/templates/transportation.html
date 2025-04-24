@@ -1,0 +1,52 @@
+{%extends 'nav.html'%}{%block content%} {%load static%}
+
+<div class="transportation-img">
+  <div class="home-body">
+    <h1 class="body-title">Transportation</h1>
+    <h2 class="body-desc">New Construction, Rehabilitation, & Preservation</h2>
+    <a href="/contact" style="color:rgb(43, 43, 43);" class="contact-link contact-button home-contact"
+      >Get in touch about Transportation Services</a
+    >
+  </div>
+</div>
+
+<div class="all-services">
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/construction.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">New Construction</p>
+    <p class="service-sub">
+      Property Lines<br />
+      Highway<br />
+      Urban<br />
+      Rural
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/rehabilitation.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Rehabilitation</p>
+    <p class="service-sub">
+      Patching<br />
+      Overlay<br />
+      Reclamation<br />
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/preservation.jpeg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Preservation</p>
+    <p class="service-sub">
+      Crack Seal<br />
+      Fog Seal<br />
+      Chip Seal<br />
+      Scrub Seal<br />
+      Microsurfacing<br />
+      Cape Seal
+    </p>
+  </div>
+</div>
+
+{%endblock%}

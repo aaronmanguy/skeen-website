@@ -1,0 +1,102 @@
+{%extends 'nav.html'%}{%block content%} {%load static%} {% comment %}
+<p class="home-title">Skeen Engineering</p>
+{% endcomment %}
+
+<div class="body-img">
+  <div class="home-body">
+    <h1 class="home-head body-title">Who We Are</h1>
+    <h2 class="body-desc">
+      Skeen Engineering is a Hernando, Mississippi based Civil Engineering &
+      Land Surveying Consulting firm. We proudly serve DeSoto County, Shelby
+      County, the Mississippi Delta and the greater Memphis Area. Our mission is
+      to provide each and every client with the kind of prompt, professional and
+      courteous service that nurtures lifelong relationships.
+    </h2>
+    <a
+      href="/contact"
+      style="color: rgb(43, 43, 43)"
+      class="contact-link contact-button home-contact"
+      >Get your project started!</a
+    >
+  </div>
+</div>
+
+<div class="all-services">
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/surveying.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Surveying</p>
+    <p class="service-sub">
+      Boundary<br />
+      Topographic Mapping<br />
+      Construction Layout<br />
+      Flood Insurance
+    </p>
+    <a href="/surveying" class="contact-link service-button home-contact"
+      >Learn More</a
+    >
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/transportation.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Transportation</p>
+    <p class="service-sub">
+      New Construction<br />
+      Rehabilitation<br />
+      Preservation<br />
+      <a href="/transportation" class="contact-link service-button home-contact"
+        >Learn More</a
+      >
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/land development.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Land Development</p>
+    <p class="service-sub">
+      Subdivision<br />
+      Planned Urban Development<br />
+      Site Grading & Drainage<br />
+      <a
+        href="/land-development"
+        class="contact-link service-button home-contact"
+        >Learn More</a
+      >
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/storm water.jpeg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Storm Water</p>
+    <p class="service-sub">
+      Storm Water Management<br />
+      Drainage Studies<br />
+      Collection System Design<br />
+      <a href="/storm-water" class="contact-link service-button home-contact"
+        >Learn More</a
+      >
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/water & sewer.jpeg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Water & Sewer</p>
+    <p class="service-sub">
+      System Analysis<br />
+      Mapping & GIS<br />
+      Rehabilitation<br />
+      Collection Design<br />
+      Distribution Design<br />
+      Treatment Design<br />
+      <a href="/water-sewer" class="contact-link service-button home-contact"
+        >Learn More</a
+      >
+    </p>
+  </div>
+</div>
+
+{%endblock%}

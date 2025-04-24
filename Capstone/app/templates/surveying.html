@@ -1,0 +1,63 @@
+{%extends 'nav.html'%}{%block content%} {%load static%}
+
+<div class="survey-img">
+  <div class="home-body">
+    <h1 class="body-title">Surveying</h1>
+    <h2 class="body-desc">
+      Boundary, Topographic Mapping, Construction Layout, & Flood Insurance
+    </h2>
+    <a href="/contact" style="color:rgb(43, 43, 43);" class="contact-link contact-button home-contact"
+      >Get in touch about Surveying Services</a
+    >
+  </div>
+</div>
+
+<div class="all-services">
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/boundary.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Boundary</p>
+    <p class="service-sub">
+      Property Lines<br />
+      Subdivisions<br />
+      Right-of-Way<br />
+      Conservation Easements
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/topographic.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Topographic Mapping</p>
+    <p class="service-sub">
+      Horizontal<br />
+      Relief<br />
+      Utility<br />
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/layout.jpeg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Construction Layout</p>
+    <p class="service-sub">
+      Site<br />
+      Road<br />
+      Bridge<br />
+      Airport
+    </p>
+  </div>
+
+  <div class="service-box">
+    <img class="service-img" src="{% static "images/flood.jpg" %}" />
+    <hr class="divider" />
+    <p class="service-name">Flood Insurance</p>
+    <p class="service-sub">
+      Elevation Certificates<br />
+      Letters of Map Amendment / Revision<br />
+      BFE Determination<br />
+    </p>
+  </div>
+</div>
+
+{%endblock%}

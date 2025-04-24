@@ -1,0 +1,51 @@
+{%extends 'nav.html'%}{%block content%} {%load static%}
+
+<div class="contact-img">
+  <div class="home-body">
+    <h1 class="body-title">Contact</h1>
+    <h2 class="body-desc">
+      Skeen Engineering<br />
+      <p style="font-weight: normal">Christopher Skeen</p>
+      <br />
+
+      <p class="contact-info">
+        <a href="mailto:sheaskeen@gmail.com" class="footer-link"
+          >sheaskeen@gmail.com</a
+        ><br />
+        <a href="tel:+16627212772" class="footer-link">(662) 721-2772</a><br />
+        434 Country Club Dr.<br />
+        Hernando, MS 38632
+      </p>
+    </h2>
+  </div>
+</div>
+<div class="contact-hold">
+  {%if firstName%}
+  <center>
+    <h1>Thanks {{firstName}}!</h1>
+    <p>We have received your information and will get back to you shortly.</p>
+  </center>
+  {%else%}
+  <center>
+    <h1 class="form-title">Tell us about your project</h1>
+  </center>
+
+  <div class="form-container">
+    <form
+      action="{% url "contact" %}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+      <div class="contact-form">
+        {{ form.as_p }}
+        <center>
+          <button type="submit">Send</button>
+        </center>
+      </div>
+    </form>
+  </div>
+  {%endif%}
+</div>
+
+{%endblock%}
